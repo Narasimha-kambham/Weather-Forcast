@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <div class="card">
+        <div class="search">
+          <input type="text" class="lat" placeholder="Enter latitude" spellcheck="false">
+          <input type="text" class="long" placeholder="Enter longitude" spellcheck="false">
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="weather">
+          <img src="images/rain.png" class="weather-icon" >
+          <h1 class="temp">22°C</h1>
+          <div class="details">
+            <h2 class="latdeg">12 ° N</h2>
+          <h2 class="longdeg">12 ° W</h2>
+          </div>
+          
+          <div class="details">
+            <div class="col">
+              <img src="images/humidity.png">
+              <div>
+                  <p class="humidity">50%</p>
+                  <p>Humidity</p>
+              </div>
+            </div>
+            <div class="col">
+              <img src="images/wind.png">
+              <div>
+                  <p class="wind">15 km/hr</p>
+                  <p>Wind speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+  </body>
+</html>
